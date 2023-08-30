@@ -1,0 +1,21 @@
+<html>
+    <head></head>
+    <body>
+        <p id="texto"></p>
+
+        <script>
+            a = 0
+            b = 1
+            c = 0
+
+            for (i = 0; i < 10; i++)
+            {
+                document.getElementById("texto").innerHTML += c + " "
+                c = a + b
+                a = b
+                b = c
+            }
+            
+        </script>
+    </body>
+</html>
