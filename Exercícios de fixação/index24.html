@@ -1,0 +1,30 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <p id="texto"></p>
+        
+        <script>
+            x = parseInt(prompt("Digite um valor para x:"))
+            y = parseInt(prompt("Digite um valor para y:"))
+            
+            function pares_1(x, y){
+                for(i=x+1; i<y; i++){
+                    if(i%2==0)
+                        document.getElementById("texto").innerHTML += i + " "
+                }
+            }
+
+            pares_2 = (x, y) => {
+                for(i=x+1; i<y; i++){
+                    if(i%2==0)
+                        document.getElementById("texto").innerHTML += i + " "
+                }
+            }
+
+            pares_2(x, y)
+
+        </script>
+    </body>
+</html>
